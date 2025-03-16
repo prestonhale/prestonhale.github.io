@@ -44,6 +44,7 @@ jobs:
       - name: Copy Private Repo Content
         run: |
           rsync -v --recursive --delete --exclude .obsidian private-repo/content/Public/ public-repo/content
+          rsync -v --recursive --delete --exclude .obsidian private-repo/quartz/static/icon.png public-repo/quartz/static/icon.png
           rsync -v --recursive --delete --exclude .obsidian private-repo/quartz.config.ts public-repo/quartz.config.ts
           rsync -v --recursive --delete --exclude .obsidian private-repo/quartz.layout.ts public-repo/quartz.layout.ts
 
@@ -52,6 +53,7 @@ jobs:
         run: |
           cp public-repo/quartz.config.ts /usr/src/app/quartz.config.ts
           cp public-repo/quartz.layout.ts /usr/src/app/quartz.layout.ts
+          cp public-repo/quartz/static /usr/src/app/quartz/static
           cp -r public-repo/content /usr/src/app/content
 
       - name: Quartz Build
