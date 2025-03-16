@@ -1,0 +1,81 @@
+name: Deploy Quartz site to GitHub Pages
+ 
+on: workflow_dispatch
+ 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+ 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+ 
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    container:
+      image: ghcr.io/prestonhale/quartz:v4
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.github_token }}
+    defaults:
+      run: 
+        shell: bash
+    steps:
+      - name: Install rsync and git
+        run: apt-get update && apt-get install -y rsync && apt-get install -y git
+
+      - name: Checkout Quartz Repo (This One)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+          ref: main
+          path: public-repo
+      
+      - name: Checkout Content Repo
+        uses: actions/checkout@v4
+        with:
+          repository: prestonhale/private.prestonhale.github.io
+          ref: public
+          path: private-repo
+          ssh-key: ${{ secrets.PRIVATE_REPO_SSH_KEY }}
+      
+      - name: Copy Private Repo Content
+        run: |
+          rsync -v --recursive --delete --exclude .obsidian private-repo/content/public public-repo/content
+          rsync -v --recursive --delete --exclude .obsidian private-repo/quartz.config.ts public-repo/quartz.config.ts
+          rsync -v --recursive --delete --exclude .obsidian private-repo/quartz.layout.ts public-repo/quartz.layout.ts
+
+
+      - name: Copy Quartz Config To Build Dir
+        run: |
+          cp public-repo/quartz.config.ts /usr/src/app/quartz.config.ts
+          cp public-repo/quartz.layout.ts /usr/src/app/quartz.layout.ts
+          cp -r public-repo/content /usr/src/app/content
+
+      - name: Quartz Build
+        working-directory: /usr/src/app
+        run: npx quartz build -d content -o public
+      
+      - name: Commit new content
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Commit triggered by push to private repo"
+          repository: ${{ github.workspace }}/public-repo
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: /usr/src/app/public
+ 
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
