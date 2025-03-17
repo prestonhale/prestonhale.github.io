@@ -1,3 +1,7 @@
+---
+title: Apply for Entry-Level Games Jobs
+---
+
 # Intro
 Over the last year or so I’ve put a lot of thought into entry-level and junior jobs in games. Primarily because the topic is completely unavoidable in any social space related to game dev. But also because I've had several chats with folks who are trying to either get into games or are trying to move into more steady and interesting work in games.
 
