@@ -1,5 +1,5 @@
 ---
-title: Apply for Entry-Level Games Jobs
+title: Applying for Entry-Level Games Jobs
 ---
 
 # Intro
