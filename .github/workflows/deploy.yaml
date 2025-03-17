@@ -53,7 +53,7 @@ jobs:
         run: |
           cp public-repo/quartz.config.ts /usr/src/app/quartz.config.ts
           cp public-repo/quartz.layout.ts /usr/src/app/quartz.layout.ts
-          cp public-repo/quartz/static /usr/src/app/quartz/static
+          cp public-repo/quartz/static/icon.png /usr/src/app/quartz/static/icon.png
           cp -r public-repo/content /usr/src/app/content
 
       - name: Quartz Build
