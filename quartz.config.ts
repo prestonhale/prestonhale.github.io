@@ -10,7 +10,7 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "🐳  PhaleWhale  🐳",
     enableSPA: true,
-    enablePopovers: true,
+    enablePopovers: false,
     analytics: {},
     locale: "en-US",
     baseUrl: "phalewhale.io",
