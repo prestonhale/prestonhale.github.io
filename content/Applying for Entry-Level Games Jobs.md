@@ -1,5 +1,6 @@
 ---
 title: Applying for Entry-Level Games Jobs
+date: 2025-03-17
 ---
 
 # Intro

@@ -1,5 +1,6 @@
 ---
 title: The Unfulfilled Promise of Online Worlds
+date: 2025-07-20
 ---
 
 ## Intro

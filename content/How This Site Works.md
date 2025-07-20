@@ -1,5 +1,6 @@
 ---
 title: How This Site Works
+date: 2024-09-14
 ---
 This site is powered by three git repos.
 
