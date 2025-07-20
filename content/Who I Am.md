@@ -1,6 +1,6 @@
 ---
 title: Who Am I
-dont-include-in-recent-notes: true
+dontIncludeInRecent: true
 ---
 ### Who am I?
 Preston. 
