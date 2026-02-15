@@ -1,0 +1,101 @@
+# Moment Based Design
+I'm remaking Subnautica in 2d. 
+
+Why? Philosophically, because I think translating game moments into a highly constrained space is the easiest way to understand how emotion and mechanics connect. 
+
+## Identifying Moments of Strong Emotion
+The first part of translation is identifying the moments that make you feel something. When looking at an existing game the easiest strategy is simply to ask "What do I remember about it?" and, indeed, "Why did I play this?"
+
+This doesn't necessarily mean that the only moments worth looking at are ones that "tug on the heartstrings". 
+
+"When I look at my newly constructed base with a sense of pride" is extremely valid. So is "When I realize that I've become comfortable and secure in an area that used to be terrifying." Neither is a "Naughty Dog" style scripted event but both can be strongly emotional for the player. 
+
+## Making Mechanics Serve Feeling
+What's interesting in these moments though isn't what the player sees, or even what they do, but what they **feel**.
+
+Identifying the feeling is somewhat counterintuitive. A lot of "make X game but with Y constraint" projects think about how to stuff a mechanic into a constraint. For example: "How can I make a vehicle system in 2d?" I think that jumps a step. 
+
+The first consideration is not "how" but "why". Why does the vehicle system exist? What is it doing for the player? What do they feel when interacting with it? Is it a sense of pride in customizing something to their liking? Or a sense of safety in a dangerous world? 
+
+Establishing this motivation first allows for some creativity in implementing mechanics. If it's a sense of safety you're after there's a lot of ways to represent that system inside of your constraints. Simply duping Subnautica's vehicle system isn't interesting if you don't know why it exists in the first place. [Examples] 
+
+## Constraints Force Translation
+The next part is constraints. These are mine:
+- The game's viewport will be a 40 x 40 grid.
+- The game will be side-view with vertical space representing depth.
+- Every grid square will be a solid color. 
+- There will be no audio.
+- It will be playable in a browser.
+- It will be completable in under 3 minutes.
+
+Why choose these constraints?
+
+The restricted grid with a side view means that it's hard to directly translate the "Subnautica experience". It absolutely forces me to think about what deeper feelings are being evoked in order to move them meaningfully to an entirely different perspective and view system.
+
+Several constraints will keep the game trivially simple: the solid colored squares, the length, and lack of sound and music. Fewer things to consider is faster iteration.
+
+Perhaps most importantly, restrictive constraints remove the temptation to "make a game". The purpose is to explore mechanics as they evoke emotions. Not to make a real gameplay experience.
+
+## The Project
+At the beginning of Subnautica, after the intro cinematic, the player is left in a life pod and is forced to dive into an alien sea. After steeling themselves they enter the water. The world instantly comes alive. Small fish scatter, coral litters a sandy bottom, sea grass waves, and in the near distance is a dark kelp forest. [Visuals are always better so you can watch this sequence for yourself here.](https://youtu.be/YrUbISLDPGo?si=0qkIBWKLqvA2iG7M)
+
+I would describe this as "wonder", the cozier side of awe. There's also a sense of "foreboding".
+
+Mechanically what happens to make the player feel that? Several things. 
+
+First, there is an **immediate reveal**. The player pushes some buttons and is thrust into this expansive world all at once. 
+
+Second, there is a **flurry of activity**. Fish scatter and swarm all around the player when they enter the water. They are immediately part of that world. 
+
+Third, the world itself is **inviting and colorful**. Everything is bright, open, and pleasing to look at. 
+
+Finally, there is the **hint of danger**. At the edge of the bright inviting space is a darker area of swaying kelp.
+
+Here's what I've got:
+
+![A short video showing a small game](./images/MMD_wonder.mp4)
+
+Is there wonder here? I really think so. It certainly isn't as compelling as the actual underwater world that Subnautica presents but the core experience, the feeling evoked, persists even on a silly little grid.
+
+### Other Moments
+Here's the other moments I identified for Subnautica. I'm going to grab one a week and translate. I'll update the links here when I do.
+
+- When you open the pod for the first time and see the underwater landscape.
+
+- When you exit your vehicle to repair it while in dangerous waters.
+
+- When you crest a drop-off and see an unfamiliar area with unknown risks.
+
+- When you finish constructing a vehicle and it drops into the water.
+
+- When you start to realize you're comfortable in a previously terrifying area.
+
+- When you realize the cave you're in is an opening to something truly massive.
+
+- When you hear the roar or see the shadow of a leviathan in the distance.
+
+- When you step back into base absolutely loaded with goodies. Welcome aboard captain.
+
+- When you step back from crafting to admire your base.
+
+## Final Thoughts
+### Other Frameworks
+There are other frameworks I found while thinking about this that are similar:
+
+- [The Art of Game Design: A Book of Lenses](https://www.goodreads.com/book/show/3396933-the-art-of-game-design)
+The first "lens" here is almost exactly this idea but with two minor differences. One, its examples focus pretty heavily on "narrative" and "cinematic" game experiences. Something I'm trying to explicitly avoid here. Two, the focus on constraints and validation **without making a full game** is missing entirely.
+
+- [MDA (Mechanics, Dynamics, Aesthetics)](https://users.cs.northwestern.edu/~hunicke/MDA.pdf)
+The moment-driven design framework is similar to MDA from the player's perspective: Aesthetics -> Dynamics -> Mechanics. But I don't get much mileage out of the MDA framing. It's concerned more with taxonomy than experience.
+
+### Taking It Further
+I'd love to try translating the moments and feelings to a totally new but differently constrained game (maybe top-down this time!). 
+
+The initial wonder discussed above could easily be "entering an enchanted forest" rather than "splashing into the ocean". The moments of leaving safety and entering the unknown to make progress could be "heading out from your camp into the forest" rather than "diving deeper into the water". 
+
+I really enjoy this idea as it could add even more clarity to the explicit link between the feelings evoked and the mechanics behind them.
+
+## Outro and A Word On Experiments
+This is an experiment. It will change slightly. It may change dramatically. I'll try to keep this page updated with any changes.
+
+I believe there's value in this approach. Starting from desired moments, their emotive components, and only finally looking at the supporting mechanics keeps the focus where it should be: giving the player something.
