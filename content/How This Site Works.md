@@ -26,4 +26,4 @@ I wanted a private repo for this to be able to commit work in progress pages and
 When commits are merged to the `public` branch of this repo it triggers the Github Actions workflow on the public repo. The public repo then checks out both repos, syncs from the private repo to the public repo, builds and deploys the site, then automatically commits the new changes back to the public repo. The commit history (and indeed the .git folder) of the private repo is never shared with the public repo.
 
 ToDo
-- There's a lot of copying in the build process. From the private to the public repo and then from the public repo to the build dir that the image uses. Its definitely possible to just bbuild from the public repo checkout
+- There's a lot of copying in the build process. From the private to the public repo and then from the public repo to the build dir that the image uses. Its definitely possible to just build from the public repo checkout
