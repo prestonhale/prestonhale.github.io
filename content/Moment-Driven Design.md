@@ -42,7 +42,7 @@ Several constraints will keep the game trivially simple: the solid colored squar
 Perhaps most importantly, restrictive constraints remove the temptation to "make a game". The purpose is to explore mechanics as they evoke emotions. Not to make a real gameplay experience.
 
 ## The Project
-At the beginning of Subnautica, after the intro cinematic, the player is left in a life pod and is forced to dive into an alien sea. After steeling themselves they enter the water. The world instantly comes alive. Small fish scatter, coral litters a sandy bottom, sea grass waves, and in the near distance is a dark kelp forest. [Visuals are always better so you can watch this sequence for yourself here.](https://youtu.be/YrUbISLDPGo?si=0qkIBWKLqvA2iG7M)
+At the beginning of Subnautica, after the intro cinematic, the player is left in a life pod and is forced to dive into an alien sea. After steeling themselves they enter the water. The world instantly comes alive. Small fish scatter, coral litters a sandy bottom, sea grass waves, and in the near distance is a dark kelp forest. [Visuals are always better so you can watch this sequence for yourself here.](https://youtu.be/YrUbISLDPGo?t=107)
 
 I would describe this as "wonder", the cozier side of awe. There's also a sense of "foreboding".
 

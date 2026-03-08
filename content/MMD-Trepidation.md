@@ -66,7 +66,7 @@ That system is not in keeping with "simplest possible mechanic" to provide wonde
 Fish and fish flocks generally avoid kelp. No guarantee but they prefer not to be near it. Keeps the area clean to focus on new threat of the sawtooths. They also add a minor sense of unease since the comforting colorful boys are less present.
 
 # Lessons
-## "Play -> Change -> Play" Is The Only Loop That Matters
+## "Play / Change / Play" Is The Only Loop That Matters
 Without rapid iteration we are nothing. I think everyone "knows" this but very few people live it. And that makes sense, the larger the game gets the harder it is to rapidly test something. It can literally be weeks from conception to playable.
 
 This project has made me even more confident that rapid iteration is all that matters even if it means reducing your mechanic to throwaway code on a solid colored grid just to validate it.
