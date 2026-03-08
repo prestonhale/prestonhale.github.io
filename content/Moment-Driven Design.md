@@ -65,11 +65,11 @@ Is there wonder here? I really think so. It certainly isn't as compelling as the
 ### Other Moments
 Here's the other moments I identified for Subnautica. I'm going to grab one a week and translate. I'll update the links here when I do.
 
-- When you open the pod for the first time and see the underwater landscape.
+- When you open the pod for the first time and see the underwater landscape. (This article!)
 
 - When you exit your vehicle to repair it while in dangerous waters.
 
-- When you crest a drop-off and see an unfamiliar area with unknown risks.
+- [When you crest a drop-off and see an unfamiliar area with unknown risks.](MMD-Trepidation)
 
 - When you finish constructing a vehicle and it drops into the water.
 
