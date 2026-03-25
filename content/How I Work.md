@@ -79,6 +79,8 @@ Don’t “hedge your bets” and make sure that you allow other people their fu
     - In what way will this area be better satisfied at the end of the six weeks?
     - What concrete artifact will you produce that you can later look back on?
 7. Map progress on those projects onto each week of the six week schedule.
+8. Review expenditures and budgets. On track? Anything unknown or surprising?
+9. Meta Review: Are my systems working for me?
 
 ### Weekly Review
 1. Capture TODOs from all inboxes into system.
@@ -86,10 +88,9 @@ Don’t “hedge your bets” and make sure that you allow other people their fu
     - Were last week's goals met? Why or why not?
     - Adjust 6 week plan if not met. **Never try to "catch up" in the next week**
     - Review next week's plan.
-3. Process Notion knowledgebase/reference
-4. Review finances
-5. Review next week's calendar
-6. Meta Review: Are my systems working for me?
+3. Process captured internet resources and mark as archived, to-read, or just delete.
+4. Move any read or in-progress books, watched movies, or played games into tracking system.
+5. Review next week's calendar.
 
 ### Daily
 - Quickly review tasks that were decided on the previous night as well as the calendar.
