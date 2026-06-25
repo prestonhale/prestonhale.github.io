@@ -1,5 +1,3 @@
-# Start Killing Stop Killing Games
-
 Stop Killing Games is a movement about ensuring the playability of video games in the long-term. I'm a game dev and a lover of old games. You would assume this is a cause near and dear to my heart!
 
 Unfortunately, the execution of SKG is mostly nonsense and often exhausting to engage with. And the reason is its embrace of an extremely common pattern in "movements" especially internet movements:
